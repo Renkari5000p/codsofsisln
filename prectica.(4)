@@ -1,3 +1,6 @@
 nombre = input("Cuantos años tienes")
 edad = input("Que edad tienes")
 profesion = input("Que deseas estudiar")
+cual es tu nombre  carlos gallado ledesma
+Que edad tienes 16
+Que deseas estudiar mecatronica
