@@ -20,3 +20,5 @@ mes_hoy = febrero
 año_actual = 2025
 
 print(año_actual-año_nac)
+
+16
