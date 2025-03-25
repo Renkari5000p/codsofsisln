@@ -1,0 +1,8 @@
+with open('alumnos.txt', 'r') as fichero:
+     for linea in fichero.readlines():
+ 	    print(linea, end='')
+
+
+lista = ["Valente carrillo Jasmin/n", "Ramires Morales Ismael Brandom/n", "valero Alamilla Enrrique/n",  "Martines Segura Jonatan/n", "Garcia herrera Iyari David/n", "Ballardo Fregozo Eduardo Carlos/n", "Montaño  Hernandes yamile Isabela/n", "Ortega Sandoval Juan antonio/n", "Rievelin Masias Miguel Aries/n", "Santana Martinez Dilan Martin/n", "Yerara Ramos muguel Diego/n"]
+with open("alumnos.txt", 'w') as fichero:
+    fichero.writelines(lista)
