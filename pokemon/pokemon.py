@@ -41,12 +41,14 @@ class Llamadasinternet():
         r = requests.get(url+pokemon)
         print(r)
         obj = json.loads(r.content)
-        return obj['sprites']['back_default']
+        return obj['sprites']['front_default'], obj['sprites']['front_shiny']
 url = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png"
 req = Llamadasinternet()
 pokemon = input("escribe el nombre del pokemon:")
+img, shiny = req.nombre_pokemon(pokemon)
 img = req.nombre_pokemon(pokemon)
 req.imagen(img, pokemon+".png")
+req.imagen(shiny, pokemon+"_shiny.png")
 #api_key = '69ec8ca2037d63a120d31c59efd0f604'
 #city = 'Zapopan'
 #req.clima(city, api_key)
